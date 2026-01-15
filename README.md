@@ -2,7 +2,7 @@
 
 This software uses web scrapping to download assets from eftstream.synopsys.com using aspera fasp protocol.
 
-# How to install
+## Install dependencies
 
  pip install -r requirements.txt
 
