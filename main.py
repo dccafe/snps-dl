@@ -1,19 +1,19 @@
+from pathlib          import Path
+from argparse         import ArgumentParser
 from snps_dl.scrapper import download
 from snps_dl.fs_utils import wait_files 
 from snps_dl.database import list_of_files
-from pathlib          import Path
 
-product = 'verdi'
-version = 'vX-2025.06-SP2'
+parser = ArgumentParser(description="A webscrapper to download Synopsys tools from eftstream website")
+parser.add_argument("product", type=str, help="Synopsys tool name as in eftstream folder like vcs_all")
+parser.add_argument("version", type=str, help="Version string like vX-2025.06-SP2")
+args = parser.parse_args()
+
+product = args.product
+version = args.version
+
 src_dir = Path.home()/'Downloads'
-
 siteID = download(product, version)
-
-site_info = f"""
-	siteId={siteID}
-	siteAdmin=
-	siteContact=
-"""
 
 vcs_conf = f"""
 SourceDir: {src_dir}

@@ -1,4 +1,3 @@
-# t-2iBWR17ilhA
 from watchdog.observers import Observer
 from watchdog.events    import FileSystemEventHandler
 from threading  		import Thread, Event

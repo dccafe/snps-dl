@@ -1,4 +1,3 @@
-# t-2iBWR17ilhA
 from time       import sleep
 from getpass    import getpass
 from subprocess import STDOUT
