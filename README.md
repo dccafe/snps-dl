@@ -4,16 +4,16 @@ This software uses web scrapping to download assets from eftstream.synopsys.com 
 
 ## Install dependencies
 
- pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Run the downloader
 
- python main.py <tool> <version>
+`python main.py <tool> <version>`
 
- Ex: python main.py vcs_all vX-2025.06-SP2
+Ex: `python main.py vcs_all vX-2025.06-SP2`
 
 This should download files to your Downloads folder
 and create the config file vcs.conf,
 Then, run the installer
 
- /opt/synopsys/installer/batch_installer -config vcs.conf -target /opt/synopsys
+`/opt/synopsys/installer/batch_installer -config vcs.conf -target /opt/synopsys`
