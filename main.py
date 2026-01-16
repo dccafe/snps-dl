@@ -18,7 +18,7 @@ conf = f"""
 SourceDir: {src_dir}
 SiteId: {siteID}
 PRODUCTS: {product.split('_')[0]}
-RELEASES: X-2025.06-SP2
+RELEASES: ${version[1:]}
 PLATFORMS: common linux64
 """.strip()
 

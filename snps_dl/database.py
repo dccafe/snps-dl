@@ -6,6 +6,14 @@ list_of_files = {
 			'SynopsysInstaller_v5.10.run':           '3722548232'
 		}
 	},
+	'scl':
+	{
+		'v2025.03-SP2':
+		{
+			'scl_v2025.03-SP2_common.spf':           '1492259160',
+			'scl_v2025.03-SP2_linux64.spf':          '1276153600'
+		}
+	},
 	'vcs_all': 
 	{
 		'vX-2025.06-SP2':
