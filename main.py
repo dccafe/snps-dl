@@ -5,11 +5,13 @@ from snps_dl.fs_utils import wait_files
 
 parser = ArgumentParser(description="A webscrapper to download Synopsys tools from eftstream website")
 parser.add_argument("product", type=str, help="Synopsys tool name as in eftstream folder like vcs_all")
-parser.add_argument("version", type=str, help="Version string like vX-2025.06-SP2")
+parser.add_argument("version", type=str, help="Version string such as vX-2025.06-SP2")
 args = parser.parse_args()
 
 product = args.product
 version = args.version
+
+print(version)
 
 src_dir = Path.home()/'Downloads'
 siteID = download(product, version)
@@ -18,7 +20,7 @@ conf = f"""
 SourceDir: {src_dir}
 SiteId: {siteID}
 PRODUCTS: {product.split('_')[0]}
-RELEASES: ${version[1:]}
+RELEASES: {version[1:]}
 PLATFORMS: common linux64
 """.strip()
 
