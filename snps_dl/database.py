@@ -25,11 +25,11 @@ list_of_files = {
 		},
 		'vY-2026.03':
 		{
-			'vcs_vY-2026.03_common.spf': '2586156712'
+			'vcs_vY-2026.03_common.spf': '2586156712',
 			'vcs_vY-2026.03_linux64.spf.part00': '3213838152',
 			'vcs_vY-2026.03_linux64.spf.part01': '3951557657',
 			'vcs_vY-2026.03_linux64.spf.part02': '3050943074',
-			'vcs_vY-2026.03_linux64.spf.part03: '2210523'
+			'vcs_vY-2026.03_linux64.spf.part03': '2210523'
 		}
 	},
 	'verdi':
