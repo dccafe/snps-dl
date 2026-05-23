@@ -45,7 +45,7 @@ class MonitorDownloads(FileSystemEventHandler):
 		filepath = Path(event.dest_path)
 		filename = filepath.name
 		print(f'{filename} finished, checking integrity')
-		if crc[filename] == cksum(filepath):
+		if self.files_crc[filename] == cksum(filepath):
 			print(f'file {filename} found, cksum ok')
 
 		if filename in self.files:
