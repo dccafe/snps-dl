@@ -48,11 +48,11 @@ class MonitorDownloads(FileSystemEventHandler):
 		if self.files_crc[filename] == cksum(filepath):
 			print(f'file {filename} found, cksum ok')
 
-		if filename in self.files:
-			self.files.remove(filename)
-			print(f"Downloaded: {filename} ({len(self.files)} remaining)")
+		if filename in self.files_crc:
+			self.files_crc.remove(filename)
+			print(f"Downloaded: {filename} ({len(self.files_crc)} remaining)")
 		
-		if not self.files:
+		if not self.files_crc:
 			print("All files downloaded!")
 			self.finished.set() 
 
